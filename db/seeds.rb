@@ -9,8 +9,8 @@ roles = ['teacher', 'ta', 'student']
 
   5.times do
     user = User.create(
-      first_name: Faker::FunnyName.name,
-      last_name: Faker::Superhero.name
+      fname: Faker::FunnyName.name,
+      lname: Faker::Superhero.name
     )
 
     Enrollment.create(
